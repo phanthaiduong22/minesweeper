@@ -1,0 +1,104 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+canvas {
+  background: lightblue;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  opacity: 1;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  /* background: lightblue;  */
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  border-bottom: 2px solid #000;
+}
+.taskbar {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+}
+.logo-container {
+  flex: 1;
+}
+.level select {
+  margin: 0px 0px 0px 10px;
+}
+.level {
+  display: flex;
+  flex: 1;
+}
+.numberBomb {
+  display: flex;
+  flex: 1;
+}
+.timeCounting {
+  display: flex;
+  flex: 1;
+}
+.score {
+  display: flex;
+}
+.taskbar p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.gameover {
+  /* background: lightblue; */
+  margin: auto;
+  width: 7%;
+}
+.newgame {
+}
+button {
+  display: flex;
+  background: lightblue;
+  margin: auto;
+  width: 7%;
+  font-size: 20px;
+  left: 10%;
+  opacity: 0.8;
+}
+button:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .numberBomb p,
+  .level p,
+  .timeCounting p,
+  .showTime,
+  .score p{
+    font-size: 12px;
+  }
+  .gameover p{
+    font-size:8px;
+  }
+  button {
+    display: flex;
+    background: lightblue;
+    margin: auto;
+    width: 7%;
+    font-size: 10px;
+    left: 10%;
+    opacity: 0.8;
+  }
+  button:hover {
+    opacity: 1;
+  }
+}

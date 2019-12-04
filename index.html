@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="app.js"></script>
+    <script src="cell.js"></script>
+    <script src="time.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <image src="./logo.png" alt="logo" width="200"></image>
+        </div>
+        <div class="language-container">
+            <select class="lang-menu-select">
+                <option value="/" selected>
+                    English
+                </option>
+                <option value="/vi">
+                    Tiếng Việt
+                </option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <!-- taskbar -->
+        <div class="taskbar">
+            <div class="level">
+                <p>Level: </p>
+                <select id="levelSelector" onchange="newGame()">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium"">Medium</option>
+                    <option value=" Hard">Hard</option>
+                </select>
+            </div>
+            <div class="numberBomb">
+                <p>Bombs:</p>
+                <p class="nBOMB">10</p>
+            </div>
+            <div class="timeCounting">
+                <p>Time: </p>
+                <!-- <p> 4.45s</p> -->
+                <h1 class="showTime"><time>00:00:00</time></h1>
+            </div>
+            <div class="score">
+                <p>Score: </p>
+                <p class="showScore">0</p>
+            </div>
+        </div>
+
+        <div class="gameover">
+            <p class="showGameOver"></p>
+        </div>
+
+
+        <!-- test -->
+        <div class="newgame">
+            <button class="clickNewGame" id="idClickNewGame">New Game</button>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
