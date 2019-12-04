@@ -166,6 +166,7 @@ function newGame() {
     clearTimeout(t);
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
+    timer();
     document.querySelector(".showGameOver").textContent = "";
     document.querySelector(".showScore").textContent = 0;
     var x = document.getElementById("levelSelector").value;
