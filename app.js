@@ -1,3 +1,4 @@
+let img;
 let cols = 9;
 let rows = 9;
 let width = 30;
@@ -130,6 +131,10 @@ function gameOver(win) {
     clearTimeout(t);
 }
 //
+
+function preload() {
+    img = loadImage('bomb.png');
+}
 function setup() {
     h1 = document.querySelector('.showTime');
     nBomb = 0;

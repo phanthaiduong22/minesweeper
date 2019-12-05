@@ -22,8 +22,11 @@ Cell.prototype.show = function () {
             stroke(0);
             fill(255);
             rect(this.x, this.y, this.w, this.w);
-            fill(20);
-            ellipse(this.x + 0.5 * this.w, this.y + 0.5 * this.w, this.w * 0.5, this.w * 0.5);
+            // fill(20);
+            // ellipse(this.x + 0.5 * this.w, this.y + 0.5 * this.w, this.w * 0.5, this.w * 0.5);
+            //bomb
+            // background(50);
+            image(img, this.x + 5, this.y + 2, this.w * 0.7, this.w * 0.7);
         } else {
             if (this.total == 0) {
                 stroke(0);
